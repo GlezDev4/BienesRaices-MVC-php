@@ -1,0 +1,37 @@
+
+@include tablet {
+    .contenedor-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 4rem;
+    }
+}
+
+.contenedor-nosotros{
+    
+    .texto-nosotros{
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        h3{
+            font-weight: bold;
+            margin-top: 0;
+            font-size: 2.4rem;
+            text-align: left;
+            text-transform: uppercase;
+            color: $amarillo;
+            margin-bottom: 3rem;
+
+            &::after{
+                content: "";
+                display: block;
+                width: 10rem;
+                height: .5rem;
+                background-color: $verde;
+                margin-top: 1rem;
+            }
+        }
+        p{
+            text-align: left;
+        }
+    }
+}
